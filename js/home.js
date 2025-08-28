@@ -1,3 +1,5 @@
+const callHistoryData = []
+
 // function for heart count
 function heart() {
     const heartIcon = document.getElementById("heart-count")
@@ -33,7 +35,9 @@ function copy(id) {
 }
 
 
-// national emergency service
+// copy button functionality
+
+// national emergency service copy functionality
 document.getElementById("national-copy-button").addEventListener("click", function (e) {
     e.preventDefault
 
@@ -42,7 +46,7 @@ document.getElementById("national-copy-button").addEventListener("click", functi
 
 })
 
-// ambulance 
+// ambulance copy functionality 
 document.getElementById("ambulance-copy-button").addEventListener("click", function (e) {
     e.preventDefault
 
@@ -51,7 +55,7 @@ document.getElementById("ambulance-copy-button").addEventListener("click", funct
 
 })
 
-// electricity  
+// electricity copy functionality  
 document.getElementById("electricity-copy-button").addEventListener("click", function (e) {
     e.preventDefault
 
@@ -61,7 +65,7 @@ document.getElementById("electricity-copy-button").addEventListener("click", fun
 })
 
 
-// police
+// police copy functionality
 document.getElementById("police-copy-button").addEventListener("click", function (e) {
     e.preventDefault
 
@@ -70,7 +74,7 @@ document.getElementById("police-copy-button").addEventListener("click", function
 
 })
 
-// women & child helpline
+// women & child helpline copy functionality
 document.getElementById("child-help-copy-button").addEventListener("click", function (e) {
     e.preventDefault
 
@@ -79,7 +83,7 @@ document.getElementById("child-help-copy-button").addEventListener("click", func
 
 })
 
-// brac  
+// brac copy functionality  
 document.getElementById("brac-copy-button").addEventListener("click", function (e) {
     e.preventDefault
 
@@ -89,7 +93,7 @@ document.getElementById("brac-copy-button").addEventListener("click", function (
 })
 
 
-// fire Service
+// fire Service copy functionality
 document.getElementById("fire-service-copy-button").addEventListener("click", function (e) {
     e.preventDefault
 
@@ -98,7 +102,7 @@ document.getElementById("fire-service-copy-button").addEventListener("click", fu
 
 })
 
-// anti corruption
+// anti corruption copy functionality
 document.getElementById("corruption-copy-button").addEventListener("click", function (e) {
     e.preventDefault
 
@@ -107,7 +111,7 @@ document.getElementById("corruption-copy-button").addEventListener("click", func
 
 })
 
-// bangladesh railway  
+// bangladesh railway copy functionality  
 document.getElementById("railway-copy-button").addEventListener("click", function (e) {
     e.preventDefault
 
@@ -115,4 +119,88 @@ document.getElementById("railway-copy-button").addEventListener("click", functio
     copy("railway-num")
 
 })
+
+
+
+// national emergency service call functionality
+document.getElementById("national-call-button").addEventListener("click", function (e) {
+    e.preventDefault
+
+    const callContainer = document.getElementById("call-history-container")
+
+})
+
+// // ambulance call functionality 
+// document.getElementById("ambulance-copy-button").addEventListener("click", function (e) {
+//     e.preventDefault
+
+//     copyCount("copy-button")
+//     copy("ambulance-num")
+
+// })
+
+// // electricity call functionality  
+// document.getElementById("electricity-copy-button").addEventListener("click", function (e) {
+//     e.preventDefault
+
+//     copyCount("copy-button")
+//     copy("electricity-num")
+
+// })
+
+
+// // police call functionality
+// document.getElementById("police-copy-button").addEventListener("click", function (e) {
+//     e.preventDefault
+
+//     copyCount("copy-button")
+//     copy("police-num")
+
+// })
+
+// // women & child helpline call functionality
+// document.getElementById("child-help-copy-button").addEventListener("click", function (e) {
+//     e.preventDefault
+
+//     copyCount("copy-button")
+//     copy("child-help-num")
+
+// })
+
+// // brac call functionality  
+// document.getElementById("brac-copy-button").addEventListener("click", function (e) {
+//     e.preventDefault
+
+//     copyCount("copy-button")
+//     copy("brac-num")
+
+// })
+
+
+// // fire Service call functionality
+// document.getElementById("fire-service-copy-button").addEventListener("click", function (e) {
+//     e.preventDefault
+
+//     copyCount("copy-button")
+//     copy("fire-service-num")
+
+// })
+
+// // anti corruption call functionality
+// document.getElementById("corruption-copy-button").addEventListener("click", function (e) {
+//     e.preventDefault
+
+//     copyCount("copy-button")
+//     copy("corruption-num")
+
+// })
+
+// // bangladesh railway call functionality  
+// document.getElementById("railway-copy-button").addEventListener("click", function (e) {
+//     e.preventDefault
+
+//     copyCount("copy-button")
+//     copy("railway-num")
+
+// })
 
