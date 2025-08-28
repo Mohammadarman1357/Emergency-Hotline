@@ -44,12 +44,13 @@
                 </div>
                 <div
                     class="flex items-center justify-center gap-1 md:gap-[10px] w-[70px] md:w-[123px] h-[30px] md:h-[52px] bg-[#41ff6b1a] p-2 md:p-3 rounded-[50px]">
-                    <h1 class="coin-count inter-font text-xs md:text-[16px] md:font-black">100</h1>
+                    <h1 class="inter-font text-xs md:text-[16px] md:font-black" id="coin-count">100</h1>
                     <img src="./assets/coin.png" class="w-3 md:w-6 h-3 md:h-6" alt="">
                 </div>
                 <div
                     class="flex items-center justify-center gap-1 md:gap-[10px] w-[70px] md:w-[123px] h-[30px] md:h-[52px] bg-[#00a63e] p-3 md:py-3 md:px-9 rounded-[50px]">
-                    <h1 class="copy-count inter-font text-xs md:text-[16px] md:font-semibold text-white"><span id="copy-button">0</span></h1>
+                    <h1 class="copy-count inter-font text-xs md:text-[16px] md:font-semibold text-white"><span
+                            id="copy-button">0</span></h1>
                     <h1 class="inter-font text-xs md:text-[16px] md:font-semibold text-white">Copy</h1>
                 </div>
             </div>
@@ -96,12 +97,14 @@
 
                     <div class="flex justify-between items-center">
                         <button
-                            class="copy-btn text-center roboto-font py-3 px-8 md:py-2 md:px-6 bg-white  border-1 border-[#d4d6d5] hover:bg-black hover:text-white text-[#5c5c5c] rounded-lg" id="national-copy-button">
+                            class="copy-btn text-center roboto-font py-3 px-8 md:py-2 md:px-6 bg-white  border-1 border-[#d4d6d5] hover:bg-black hover:text-white text-[#5c5c5c] rounded-lg"
+                            id="national-copy-button">
                             <i class="fa-regular fa-copy"></i> <span class="ml-1">Copy</span>
                         </button>
 
                         <button
-                            class="call-btn text-center roboto-font py-3 px-9 md:py-2 md:px-6 bg-[#00a63e] hover:bg-[#f2f2f2] hover:text-[#5c5c5c] text-white rounded-lg">
+                            class="call-btn text-center roboto-font py-3 px-9 md:py-2 md:px-6 bg-[#00a63e] hover:bg-[#f2f2f2] hover:text-[#5c5c5c] text-white rounded-lg"
+                            id="national-call-button" onclick="callButton()">
                             <i class="fa-solid fa-phone"></i> <span class="ml-1">Call</span>
                         </button>
                     </div>
@@ -127,12 +130,14 @@
 
                     <div class="flex justify-between items-center">
                         <button
-                            class="copy-btn text-center roboto-font py-3 px-8 md:py-2 md:px-6 bg-white border-1 border-[#d4d6d5] text-[#5c5c5c] hover:bg-black hover:text-white  rounded-lg" id="ambulance-copy-button">
+                            class="copy-btn text-center roboto-font py-3 px-8 md:py-2 md:px-6 bg-white border-1 border-[#d4d6d5] text-[#5c5c5c] hover:bg-black hover:text-white  rounded-lg"
+                            id="ambulance-copy-button">
                             <i class="fa-regular fa-copy"></i> <span class="ml-1">Copy</span>
                         </button>
 
                         <button
-                            class="call-btn text-center roboto-font py-3 px-9 md:py-2 md:px-6 bg-[#00a63e] text-white hover:bg-[#f2f2f2] hover:text-[#5c5c5c] rounded-lg">
+                            class="call-btn text-center roboto-font py-3 px-9 md:py-2 md:px-6 bg-[#00a63e] text-white hover:bg-[#f2f2f2] hover:text-[#5c5c5c] rounded-lg"
+                            id="ambulance-call-button">
                             <i class="fa-solid fa-phone"></i> <span class="ml-1">Call</span>
                         </button>
                     </div>
@@ -158,12 +163,14 @@
 
                     <div class="flex justify-between items-center">
                         <button
-                            class="copy-btn text-center roboto-font py-3 px-8 md:py-2 md:px-6 bg-white border-1 border-[#d4d6d5] text-[#5c5c5c] hover:bg-black hover:text-white rounded-lg" id="electricity-copy-button">
+                            class="copy-btn text-center roboto-font py-3 px-8 md:py-2 md:px-6 bg-white border-1 border-[#d4d6d5] text-[#5c5c5c] hover:bg-black hover:text-white rounded-lg"
+                            id="electricity-copy-button">
                             <i class="fa-regular fa-copy"></i> <span class="ml-1">Copy</span>
                         </button>
 
                         <button
-                            class="call-btn text-center roboto-font py-3 px-9 md:py-2 md:px-6 bg-[#00a63e] text-white hover:bg-[#f2f2f2] hover:text-[#5c5c5c] rounded-lg">
+                            class="call-btn text-center roboto-font py-3 px-9 md:py-2 md:px-6 bg-[#00a63e] text-white hover:bg-[#f2f2f2] hover:text-[#5c5c5c] rounded-lg"
+                            id="electricity-call-button">
                             <i class="fa-solid fa-phone"></i> <span class="ml-1">Call</span>
                         </button>
                     </div>
@@ -189,12 +196,13 @@
 
                     <div class="flex justify-between items-center">
                         <button
-                            class="copy-btn text-center roboto-font py-3 px-8 md:py-2 md:px-6 bg-white border-1 border-[#d4d6d5] text-[#5c5c5c] hover:bg-black hover:text-white rounded-lg" id="police-copy-button">
+                            class="copy-btn text-center roboto-font py-3 px-8 md:py-2 md:px-6 bg-white border-1 border-[#d4d6d5] text-[#5c5c5c] hover:bg-black hover:text-white rounded-lg"
+                            id="police-copy-button">
                             <i class="fa-regular fa-copy"></i> <span class="ml-1">Copy</span>
                         </button>
 
                         <button
-                            class="call-btn text-center roboto-font py-3 px-9 md:py-2 md:px-6 bg-[#00a63e] text-white hover:bg-[#f2f2f2] hover:text-[#5c5c5c] rounded-lg">
+                            class="call-btn text-center roboto-font py-3 px-9 md:py-2 md:px-6 bg-[#00a63e] text-white hover:bg-[#f2f2f2] hover:text-[#5c5c5c] rounded-lg" id="police-call-button">
                             <i class="fa-solid fa-phone"></i> <span class="ml-1">Call</span>
                         </button>
                     </div>
@@ -220,12 +228,13 @@
 
                     <div class="flex justify-between items-center">
                         <button
-                            class="copy-btn text-center roboto-font py-3 px-8 md:py-2 md:px-6 bg-white border-1 border-[#d4d6d5] text-[#5c5c5c] hover:bg-black hover:text-white rounded-lg" id="child-help-copy-button">
+                            class="copy-btn text-center roboto-font py-3 px-8 md:py-2 md:px-6 bg-white border-1 border-[#d4d6d5] text-[#5c5c5c] hover:bg-black hover:text-white rounded-lg"
+                            id="child-help-copy-button">
                             <i class="fa-regular fa-copy"></i> <span class="ml-1">Copy</span>
                         </button>
 
                         <button
-                            class="call-btn text-center roboto-font py-3 px-9 md:py-2 md:px-6 bg-[#00a63e] text-white hover:bg-[#f2f2f2] hover:text-[#5c5c5c] rounded-lg">
+                            class="call-btn text-center roboto-font py-3 px-9 md:py-2 md:px-6 bg-[#00a63e] text-white hover:bg-[#f2f2f2] hover:text-[#5c5c5c] rounded-lg" id="child-help-call-button">
                             <i class="fa-solid fa-phone"></i> <span class="ml-1">Call</span>
                         </button>
                     </div>
@@ -251,12 +260,13 @@
 
                     <div class="flex justify-between items-center">
                         <button
-                            class="copy-btn text-center roboto-font py-3 px-8 md:py-2 md:px-6 bg-white border-1 border-[#d4d6d5] text-[#5c5c5c] hover:bg-black hover:text-white rounded-lg" id="brac-copy-button">
+                            class="copy-btn text-center roboto-font py-3 px-8 md:py-2 md:px-6 bg-white border-1 border-[#d4d6d5] text-[#5c5c5c] hover:bg-black hover:text-white rounded-lg"
+                            id="brac-copy-button">
                             <i class="fa-regular fa-copy"></i> <span class="ml-1">Copy</span>
                         </button>
 
                         <button
-                            class="call-btn text-center roboto-font py-3 px-9 md:py-2 md:px-6 bg-[#00a63e] text-white hover:bg-[#f2f2f2] hover:text-[#5c5c5c] rounded-lg">
+                            class="call-btn text-center roboto-font py-3 px-9 md:py-2 md:px-6 bg-[#00a63e] text-white hover:bg-[#f2f2f2] hover:text-[#5c5c5c] rounded-lg" id="brac-call-button">
                             <i class="fa-solid fa-phone"></i> <span class="ml-1">Call</span>
                         </button>
                     </div>
@@ -282,12 +292,13 @@
 
                     <div class="flex justify-between items-center">
                         <button
-                            class="copy-btn text-center roboto-font py-3 px-8 md:py-2 md:px-6 bg-white border-1 border-[#d4d6d5] text-[#5c5c5c] hover:bg-black hover:text-white rounded-lg" id="fire-service-copy-button">
+                            class="copy-btn text-center roboto-font py-3 px-8 md:py-2 md:px-6 bg-white border-1 border-[#d4d6d5] text-[#5c5c5c] hover:bg-black hover:text-white rounded-lg"
+                            id="fire-service-copy-button">
                             <i class="fa-regular fa-copy"></i> <span class="ml-1">Copy</span>
                         </button>
 
                         <button
-                            class="call-btn text-center roboto-font py-3 px-9 md:py-2 md:px-6 bg-[#00a63e] text-white hover:bg-[#f2f2f2] hover:text-[#5c5c5c] rounded-lg">
+                            class="call-btn text-center roboto-font py-3 px-9 md:py-2 md:px-6 bg-[#00a63e] text-white hover:bg-[#f2f2f2] hover:text-[#5c5c5c] rounded-lg" id="fire-service-call-button">
                             <i class="fa-solid fa-phone"></i> <span class="ml-1">Call</span>
                         </button>
                     </div>
@@ -313,12 +324,13 @@
 
                     <div class="flex justify-between items-center">
                         <button
-                            class="copy-btn text-center roboto-font py-3 px-8 md:py-2 md:px-6 bg-white border-1 border-[#d4d6d5] text-[#5c5c5c] hover:bg-black hover:text-white rounded-lg" id="corruption-copy-button">
+                            class="copy-btn text-center roboto-font py-3 px-8 md:py-2 md:px-6 bg-white border-1 border-[#d4d6d5] text-[#5c5c5c] hover:bg-black hover:text-white rounded-lg"
+                            id="corruption-copy-button">
                             <i class="fa-regular fa-copy"></i> <span class="ml-1">Copy</span>
                         </button>
 
                         <button
-                            class="call-btn text-center roboto-font py-3 px-9 md:py-2 md:px-6 bg-[#00a63e] text-white hover:bg-[#f2f2f2] hover:text-[#5c5c5c] rounded-lg">
+                            class="call-btn text-center roboto-font py-3 px-9 md:py-2 md:px-6 bg-[#00a63e] text-white hover:bg-[#f2f2f2] hover:text-[#5c5c5c] rounded-lg" id="corruption-call-button">
                             <i class="fa-solid fa-phone"></i> <span class="ml-1">Call</span>
                         </button>
                     </div>
@@ -344,12 +356,13 @@
 
                     <div class="flex justify-between items-center">
                         <button
-                            class="copy-btn text-center roboto-font py-3 px-8 md:py-2 md:px-6 bg-white border-1 border-[#d4d6d5] text-[#5c5c5c] hover:bg-black hover:text-white rounded-lg" id="railway-copy-button">
+                            class="copy-btn text-center roboto-font py-3 px-8 md:py-2 md:px-6 bg-white border-1 border-[#d4d6d5] text-[#5c5c5c] hover:bg-black hover:text-white rounded-lg"
+                            id="railway-copy-button">
                             <i class="fa-regular fa-copy"></i> <span class="ml-1">Copy</span>
                         </button>
 
                         <button
-                            class="call-btn text-center roboto-font py-3 px-9 md:py-2 md:px-6 bg-[#00a63e] text-white hover:bg-[#f2f2f2] hover:text-[#5c5c5c] rounded-lg">
+                            class="call-btn text-center roboto-font py-3 px-9 md:py-2 md:px-6 bg-[#00a63e] text-white hover:bg-[#f2f2f2] hover:text-[#5c5c5c] rounded-lg" id="railway-call-button">
                             <i class="fa-solid fa-phone"></i> <span class="ml-1">Call</span>
                         </button>
                     </div>
@@ -362,19 +375,11 @@
                         <div class="roboto-font font-medium text-xl"><i class="fa-regular fa-clock"></i> <span
                                 class="ml-1">Call History</span></div>
                         <button
-                            class="call-btn  text-center inter-font font-semibold py-2 px-6 bg-[#00a63e] text-white hover:bg-[#f2f2f2] hover:text-[#5c5c5c] rounded-[50px]">Clear</button>
+                            class="call-btn  text-center inter-font font-semibold py-2 px-6 bg-[#00a63e] text-white hover:bg-[#f2f2f2] hover:text-[#5c5c5c] rounded-[50px]" onclick="clearButton()">Clear</button>
                     </div>
 
                     <div id="call-history-container">
-                        <div class="flex items-center justify-between p-4 rounded-lg bg-[#fafafa] mb-2">
-                            <div>
-                                <h1 class="noto-serif-bengali-font">জাতীয় জরুরি সেবা</h1>
-                                <p class="hind-madurai-font text-[#5c5c5c]">999</p>
-                            </div>
-                            <div>
-                                <h1 class="text-xs">11:36:58 AM</h1>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </div>
