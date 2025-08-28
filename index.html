@@ -49,7 +49,7 @@
                 </div>
                 <div
                     class="flex items-center justify-center gap-1 md:gap-[10px] w-[70px] md:w-[123px] h-[30px] md:h-[52px] bg-[#00a63e] p-3 md:py-3 md:px-9 rounded-[50px]">
-                    <h1 class="copy-count inter-font text-xs md:text-[16px] md:font-semibold text-white">0</h1>
+                    <h1 class="copy-count inter-font text-xs md:text-[16px] md:font-semibold text-white"><span id="copy-button">0</span></h1>
                     <h1 class="inter-font text-xs md:text-[16px] md:font-semibold text-white">Copy</h1>
                 </div>
             </div>
@@ -87,7 +87,7 @@
                     <div class="my-4">
                         <h1 class="title-card noto-serif-bengali-font font-bold text-2xl">জাতীয় জরুরি সেবা</h1>
                         <p class="subtitle-card roboto-font text-[18px] text-[#5c5c5c]">National Emergency</p>
-                        <h1 class="hotline roboto-font text-[32px] font-bold mt-6">999</h1>
+                        <h1 class="hotline roboto-font text-[32px] font-bold mt-6" id="national-num">999</h1>
 
                         <div class="category w-[103px] h-[37px] py-[6px] px-4 rounded-[50px] bg-[#f2f2f2]">
                             <h1 class="noto-serif-bengali-font text-center text-[18px] text-[#5c5c5c]">সার্বজনীন</h1>
@@ -97,7 +97,7 @@
                     <div class="flex justify-between items-center">
                         <button
                             class="copy-btn text-center roboto-font py-3 px-8 md:py-2 md:px-6 bg-white hover:bg-black border-1 border-[#d4d6d5] hover:text-white text-[#5c5c5c] rounded-lg"
-                            onclick="copy()">
+                            onclick="copy()" id="national-button">
                             <i class="fa-regular fa-copy"></i> <span class="ml-1">Copy</span>
                         </button>
 
