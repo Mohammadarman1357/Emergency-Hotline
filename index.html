@@ -96,8 +96,7 @@
 
                     <div class="flex justify-between items-center">
                         <button
-                            class="copy-btn text-center roboto-font py-3 px-8 md:py-2 md:px-6 bg-white hover:bg-black border-1 border-[#d4d6d5] hover:text-white text-[#5c5c5c] rounded-lg"
-                            onclick="copy()" id="national-button">
+                            class="copy-btn text-center roboto-font py-3 px-8 md:py-2 md:px-6 bg-white hover:bg-black border-1 border-[#d4d6d5] hover:text-white text-[#5c5c5c] rounded-lg" id="national-copy-button">
                             <i class="fa-regular fa-copy"></i> <span class="ml-1">Copy</span>
                         </button>
 
@@ -119,7 +118,7 @@
                     <div class="my-4">
                         <h1 class="title-card noto-serif-bengali-font font-bold text-2xl">অ্যাম্বুলেন্স</h1>
                         <p class="subtitle-card roboto-font text-[18px] text-[#5c5c5c]">Ambulance</p>
-                        <h1 class="hotline roboto-font text-[32px] font-bold mt-6">1994-999999</h1>
+                        <h1 class="hotline roboto-font text-[32px] font-bold mt-6" id="ambulance-num">1994-999999</h1>
 
                         <div class="category w-[103px] h-[37px] py-[6px] px-4 rounded-[50px] bg-[#f2f2f2]">
                             <h1 class="noto-serif-bengali-font text-center text-[18px] text-[#5c5c5c]">স্বাস্থ্য</h1>
@@ -128,7 +127,7 @@
 
                     <div class="flex justify-between items-center">
                         <button
-                            class="copy-btn text-center roboto-font py-3 px-8 md:py-2 md:px-6 bg-white border-1 border-[#d4d6d5] text-[#5c5c5c] rounded-lg">
+                            class="copy-btn text-center roboto-font py-3 px-8 md:py-2 md:px-6 bg-white border-1 border-[#d4d6d5] text-[#5c5c5c] rounded-lg" id="ambulance-copy-button">
                             <i class="fa-regular fa-copy"></i> <span class="ml-1">Copy</span>
                         </button>
 
@@ -150,7 +149,7 @@
                     <div class="my-4">
                         <h1 class="title-card noto-serif-bengali-font font-bold text-2xl">বিদ্যুৎ বিভ্রাট</h1>
                         <p class="subtitle-card roboto-font text-[18px] text-[#5c5c5c]">Electricity Outage</p>
-                        <h1 class="hotline roboto-font text-[32px] font-bold mt-6">16216</h1>
+                        <h1 class="hotline roboto-font text-[32px] font-bold mt-6" id="electricity-num">16216</h1>
 
                         <div class="category w-[103px] h-[37px] py-[6px] px-4 rounded-[50px] bg-[#f2f2f2]">
                             <h1 class="noto-serif-bengali-font text-center text-[18px] text-[#5c5c5c]">বিদ্যুৎ</h1>
@@ -159,7 +158,7 @@
 
                     <div class="flex justify-between items-center">
                         <button
-                            class="copy-btn text-center roboto-font py-3 px-8 md:py-2 md:px-6 bg-white border-1 border-[#d4d6d5] text-[#5c5c5c] rounded-lg">
+                            class="copy-btn text-center roboto-font py-3 px-8 md:py-2 md:px-6 bg-white border-1 border-[#d4d6d5] text-[#5c5c5c] rounded-lg" id="electricity-copy-button">
                             <i class="fa-regular fa-copy"></i> <span class="ml-1">Copy</span>
                         </button>
 
@@ -181,7 +180,7 @@
                     <div class="my-4">
                         <h1 class="title-card noto-serif-bengali-font font-bold text-2xl">পুলিশ</h1>
                         <p class="subtitle-card roboto-font text-[18px] text-[#5c5c5c]">Police</p>
-                        <h1 class="hotline roboto-font text-[32px] font-bold mt-6">999</h1>
+                        <h1 class="hotline roboto-font text-[32px] font-bold mt-6" id="police-num">999</h1>
 
                         <div class="category w-[103px] h-[37px] py-[6px] px-4 rounded-[50px] bg-[#f2f2f2]">
                             <h1 class="noto-serif-bengali-font text-center text-[18px] text-[#5c5c5c]">পুলিশ</h1>
@@ -190,7 +189,7 @@
 
                     <div class="flex justify-between items-center">
                         <button
-                            class="copy-btn text-center roboto-font py-3 px-8 md:py-2 md:px-6 bg-white border-1 border-[#d4d6d5] text-[#5c5c5c] rounded-lg">
+                            class="copy-btn text-center roboto-font py-3 px-8 md:py-2 md:px-6 bg-white border-1 border-[#d4d6d5] text-[#5c5c5c] rounded-lg" id="police-copy-button">
                             <i class="fa-regular fa-copy"></i> <span class="ml-1">Copy</span>
                         </button>
 
@@ -212,7 +211,7 @@
                     <div class="my-4">
                         <h1 class="title-card noto-serif-bengali-font font-bold text-2xl">নারী ও শিশু সহায়তা</h1>
                         <p class="subtitle-card roboto-font text-[18px] text-[#5c5c5c]">Women & Child Helpline</p>
-                        <h1 class="hotline roboto-font text-[32px] font-bold mt-6">109</h1>
+                        <h1 class="hotline roboto-font text-[32px] font-bold mt-6" id="child-help-num">109</h1>
 
                         <div class="category w-[103px] h-[37px] py-[6px] px-4 rounded-[50px] bg-[#f2f2f2]">
                             <h1 class="noto-serif-bengali-font text-center text-[18px] text-[#5c5c5c]">সহায়তা</h1>
@@ -221,7 +220,7 @@
 
                     <div class="flex justify-between items-center">
                         <button
-                            class="copy-btn text-center roboto-font py-3 px-8 md:py-2 md:px-6 bg-white border-1 border-[#d4d6d5] text-[#5c5c5c] rounded-lg">
+                            class="copy-btn text-center roboto-font py-3 px-8 md:py-2 md:px-6 bg-white border-1 border-[#d4d6d5] text-[#5c5c5c] rounded-lg" id="child-help-copy-button">
                             <i class="fa-regular fa-copy"></i> <span class="ml-1">Copy</span>
                         </button>
 
@@ -243,7 +242,7 @@
                     <div class="my-4">
                         <h1 class="title-card noto-serif-bengali-font font-bold text-2xl">ব্রাক</h1>
                         <p class="subtitle-card roboto-font text-[18px] text-[#5c5c5c]">Brac</p>
-                        <h1 class="hotline roboto-font text-[32px] font-bold mt-6">16445</h1>
+                        <h1 class="hotline roboto-font text-[32px] font-bold mt-6" id="brac-num">16445</h1>
 
                         <div class="category w-[103px] h-[37px] py-[6px] px-4 rounded-[50px] bg-[#f2f2f2]">
                             <h1 class="noto-serif-bengali-font text-center text-[18px] text-[#5c5c5c]">এনজিও</h1>
@@ -252,7 +251,7 @@
 
                     <div class="flex justify-between items-center">
                         <button
-                            class="copy-btn text-center roboto-font py-3 px-8 md:py-2 md:px-6 bg-white border-1 border-[#d4d6d5] text-[#5c5c5c] rounded-lg">
+                            class="copy-btn text-center roboto-font py-3 px-8 md:py-2 md:px-6 bg-white border-1 border-[#d4d6d5] text-[#5c5c5c] rounded-lg" id="brac-copy-button">
                             <i class="fa-regular fa-copy"></i> <span class="ml-1">Copy</span>
                         </button>
 
@@ -274,7 +273,7 @@
                     <div class="my-4">
                         <h1 class="title-card noto-serif-bengali-font font-bold text-2xl">ফায়ার সার্ভিস</h1>
                         <p class="subtitle-card roboto-font text-[18px] text-[#5c5c5c]">Fire Service</p>
-                        <h1 class="hotline roboto-font text-[32px] font-bold mt-6">999</h1>
+                        <h1 class="hotline roboto-font text-[32px] font-bold mt-6" id="fire-service-num">999</h1>
 
                         <div class="category w-[103px] h-[37px] py-[6px] px-4 rounded-[50px] bg-[#f2f2f2]">
                             <h1 class="noto-serif-bengali-font text-center text-[18px] text-[#5c5c5c]">ফায়ার</h1>
@@ -283,7 +282,7 @@
 
                     <div class="flex justify-between items-center">
                         <button
-                            class="copy-btn text-center roboto-font py-3 px-8 md:py-2 md:px-6 bg-white border-1 border-[#d4d6d5] text-[#5c5c5c] rounded-lg">
+                            class="copy-btn text-center roboto-font py-3 px-8 md:py-2 md:px-6 bg-white border-1 border-[#d4d6d5] text-[#5c5c5c] rounded-lg" id="fire-service-copy-button">
                             <i class="fa-regular fa-copy"></i> <span class="ml-1">Copy</span>
                         </button>
 
@@ -305,7 +304,7 @@
                     <div class="my-4">
                         <h1 class="title-card noto-serif-bengali-font font-bold text-2xl">দুদক</h1>
                         <p class="subtitle-card roboto-font text-[18px] text-[#5c5c5c]">Anti-Corruption</p>
-                        <h1 class="hotline roboto-font text-[32px] font-bold mt-6">106</h1>
+                        <h1 class="hotline roboto-font text-[32px] font-bold mt-6" id="corruption-num">106</h1>
 
                         <div class="category w-[103px] h-[37px] py-[6px] px-4 rounded-[50px] bg-[#f2f2f2]">
                             <h1 class="noto-serif-bengali-font text-center text-[18px] text-[#5c5c5c]">সরকারি</h1>
@@ -314,7 +313,7 @@
 
                     <div class="flex justify-between items-center">
                         <button
-                            class="copy-btn text-center roboto-font py-3 px-8 md:py-2 md:px-6 bg-white border-1 border-[#d4d6d5] text-[#5c5c5c] rounded-lg">
+                            class="copy-btn text-center roboto-font py-3 px-8 md:py-2 md:px-6 bg-white border-1 border-[#d4d6d5] text-[#5c5c5c] rounded-lg" id="corruption-copy-button">
                             <i class="fa-regular fa-copy"></i> <span class="ml-1">Copy</span>
                         </button>
 
@@ -336,7 +335,7 @@
                     <div class="my-4">
                         <h1 class="title-card noto-serif-bengali-font font-bold text-2xl">বাংলাদেশ রেলওয়ে</h1>
                         <p class="subtitle-card roboto-font text-[18px] text-[#5c5c5c]">Bangladesh Railway</p>
-                        <h1 class="hotline roboto-font text-[32px] font-bold mt-6">163</h1>
+                        <h1 class="hotline roboto-font text-[32px] font-bold mt-6" id="railway-num">163</h1>
 
                         <div class="category w-[103px] h-[37px] py-[6px] px-4 rounded-[50px] bg-[#f2f2f2]">
                             <h1 class="noto-serif-bengali-font text-center text-[18px] text-[#5c5c5c]">পরিবহন</h1>
@@ -345,7 +344,7 @@
 
                     <div class="flex justify-between items-center">
                         <button
-                            class="copy-btn text-center roboto-font py-3 px-8 md:py-2 md:px-6 bg-white border-1 border-[#d4d6d5] text-[#5c5c5c] rounded-lg">
+                            class="copy-btn text-center roboto-font py-3 px-8 md:py-2 md:px-6 bg-white border-1 border-[#d4d6d5] text-[#5c5c5c] rounded-lg" id="railway-copy-button">
                             <i class="fa-regular fa-copy"></i> <span class="ml-1">Copy</span>
                         </button>
 
